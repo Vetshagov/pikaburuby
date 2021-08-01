@@ -1,0 +1,35 @@
+%h1 Test pages
+%p Find me in app/views/test/index.html.haml
+
+
+%a.btn.btn-primary{:href => "#", :role => "button"} Link
+%button.btn.btn-primary{:type => "submit"} Button
+%input.btn.btn-primary{:type => "button", :value => "Input"}/
+%input.btn.btn-primary{:type => "submit", :value => "Submit"}/
+%input.btn.btn-primary{:type => "reset", :value => "Reset"}/
+
+%form
+  .mb-3
+    %label.form-label{:for => "exampleInputEmail1"} Email address
+    %input#exampleInputEmail1.form-control{"aria-describedby" => "emailHelp", :type => "email"}/
+    #emailHelp.form-text We'll never share your email with anyone else.
+  .mb-3
+    %label.form-label{:for => "exampleInputPassword1"} Password
+    %input#exampleInputPassword1.form-control{:type => "password"}/
+  .mb-3.form-check
+    %input#exampleCheck1.form-check-input{:type => "checkbox"}/
+    %label.form-check-label{:for => "exampleCheck1"} Check me out
+  %button.btn.btn-primary{:type => "submit"} Submit
+  
+  %table.table.table-dark
+  %thead
+    \...
+  %tbody
+    %tr.table-active
+      \...
+    %tr
+      \...
+    %tr
+      %th{:scope => "row"} 3
+      %td.table-active{:colspan => "2"} Larry the Bird
+      %td @twitter
